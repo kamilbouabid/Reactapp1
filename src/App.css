@@ -1,38 +1,249 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.ProductContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ProductDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.AnulAjout {
+  position: absolute;
+  top: 450px;
+  right:600px;
+  display: flex;
+  margin-top: 10px;
+}
+
+.CancelButton {
+  margin-right: 10px;
+}
+
+.AddToCartButton {
+  margin-left: 10px;
+}
+
+.TotalPriceContainer {
+  margin-top: 20px;
+  
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 17.5102px;
+   
+  
+
+    width: 440.45px;
+    height: 61.96px;
+  
+    background: #FFFFFF;
+    border-radius: 13.4694px;
+}
+.ajouter{
+display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+
+  position: relative;
+  width: 224.94px;
+  height: 39.06px;
+
+  background: #92CE08;
+  /* Elevation/2 */
+
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);
+  border-radius: 3.71429px;
+}
+.QuantityButton {
+  width: 21.55px;
+    height: 21.55px;
+  
+    background: #92CE08;
+   
+    border: 2.02041px solid #FFFFFF;
+  
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.insidePrice{
+font: Outfit;
+font-weight: 400;
+size: 13.47px;
+
+}
+
+.imagePrincipDuproduit{
+  width: 78.12px;
+    height: 79.47px;
+  
+   
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.nomProd{
+  width: 154.9px;
+    height: 32px;
+  
+    font-family:sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.7755px;
+    line-height: 148.9%;
+    /* or 16px */
+  
+    display: flex;
+    align-items: flex-end;
+  
+    color: #000000;
+  
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: -1.34694px 0px;
+}
+.prixProd{
+  width: 183.18px;
+    height: 16px;
+  
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10.7755px;
+    line-height: 148.9%;
+    /* identical to box height, or 16px */
+  
+    display: flex;
+    align-items: flex-end;
+  
+    color: #92CE08;
+  
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: -1.34694px 0px;
+}
+.prixProdAncien{
+  width: 183.18px;
+    height: 14px;
+  
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9.42857px;
+    line-height: 148.9%;
+    /* identical to box height, or 14px */
+  
+    display: flex;
+    align-items: flex-end;
+    text-decoration-line: line-through;
+  
+    color: #C2C2C2;
+  
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+.quantiteProd{
+  width: 5px;
+    height: 20px;
+  
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13.4694px;
+    line-height: 148.9%;
+    /* identical to box height, or 20px */
+  
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    text-transform: uppercase;
+  
+    color: #000000;
+  
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.annuler{
+  background-color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-right: 10px;
+    cursor: pointer;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);
+      border-radius: 3.71429px;
+      display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        
+          width: 185.88px;
+          height: 39.06px;
+          position: relative;
+}
+.Gdive{
+  position: absolute;
+    width: 484.9px;
+    height: 264px;
+  
+    background: #FFFFFF;
+    border-radius: 13.4694px;
+}
+#zyada{
+  font-weight: 200;
+}
+.plusNminusContainer{
+
+  position: absolute; 
+    top: 405px;
+    right: 600px;
+}
+.ImageProduitContainer{
+    position: absolute;
+      top: 370px;
+      right: 900px;
+}
+.remise{
+  text-decoration: none;
 }
